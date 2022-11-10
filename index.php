@@ -5,20 +5,20 @@
     require_once 'db/conn.php'; 
 ?>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-</head>
-<body>
-    <h1>test</h1>
-    <form>
-        <div class="inputBox">
-            <input type="email" name="email" value="">
-            <label>Username</label>
+
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
+
+<h1>test</h1>
+<form>
+    <div class="inputBox">
+        <input type="email" name="email" value="">
+        <label>Username</label>
+    </div>
+    <div class="inputBox">
+            <input type="text" name="text" value="">
+            <label>Password</label>
         </div>
-        <div class="inputBox">
-                <input type="text" name="text" value="">
-                <label>Password</label>
-            </div>
-        <input type="submit" name="sign-in" value="Sign In">
-    </form>
-</body>
+    <input type="submit" name="sign-in" value="Sign In">
+</form>
+
