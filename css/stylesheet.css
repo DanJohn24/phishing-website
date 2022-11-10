@@ -1,67 +1,100 @@
-
-
-.container {
-    width: 100%;
-    height: 1000px;
-    position: relative;
-    }
-    
-    nav {
-    background-color: #333333;
-    height:30px;
-    
-    }
-    li{
-        list-style:none;
-        display:inline-block;
-    }
-    li a {
-    text-decoration: none;
-    font-family: arial;
-    color: #ABABAB;
-    float: left;
-    padding: 5px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-top: 2px;
-    margin-right: 13px;
-    
-    }
-    
-    img {
-        width:280px;
-        margin: 195px auto 0 auto;
-        display:block;
-    }
-    
-    #sign {
-    border: 2px solid #D94A4A;
-    background-color: #D94A4A;
-    height: 16px;
-    width: 65px;
-    float: right;
-    margin-right: 40px;
-    margin-top: 20px;
-    border-radius: 3px;
-    font-size: 11px;
-    font-family: arial;
-    text-align: center;
-    color: white;
-    font-weight: 600;
-    padding-top: 7px;
-    
-    }
-    
-    input {
-    width: 550px;
-    height: 25px;
-    border: 1px solid #3492F7;
-     margin:20px auto;
-        display:block;
-    }
-    
-    #footer {
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  
+  .box {
     position: absolute;
-    bottom: 0;
-    font-family: verdana;
-    }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+
+  }
+  
+  .box h2 {
+    margin: 0px 0 -0.125rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    color: #202124;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .box p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .1px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .box .inputBox {
+    position: relative;
+  }
+  
+  .box .inputBox input {
+    width: 93%;
+    padding: 0.625rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+    
+  }
+  
+  .box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: grey;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label,
+  .box .inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .box .inputBox input:focus {
+    outline: none;
+    border: 2px solid #1a73e8;
+  }
+  .box input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+  }
+  
+  .box input[type="submit"]:hover {
+    background-color: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+  }
