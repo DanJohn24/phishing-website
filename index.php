@@ -14,12 +14,13 @@
 <h1>test</h1>
 <form>
     <div class="inputBox">
-        <input type="email" name="email" value="">
         <label>Username</label>
+        <input type="email" name="email" value="">
+        
     </div>
     <div class="inputBox">
-            <input type="text" name="text" value="">
-            <label>Password</label>
+        <label>Password</label>
+        <input type="text" name="text" value="">
         </div>
     <input type="submit" name="sign-in" value="Sign In">
 </form> 
