@@ -5,7 +5,7 @@
     require_once 'db/conn.php'; 
 ?>
 
-
+<!DOCTYPE html>
 <form>
     <div class="inputBox">
         <input type="email" name="email" value="">
@@ -17,4 +17,5 @@
         </div>
     <input type="submit" name="sign-in" value="Sign In">
 </form>
+</HTML>
     
