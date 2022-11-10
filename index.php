@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 </head>
 <body>
+    <h1>test</h1>
     <form>
         <div class="inputBox">
             <input type="email" name="email" value="">
