@@ -6,9 +6,11 @@
 ?>
 
 
-<!-- <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
- -->
-
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+ 
+<body>
 <h1>test</h1>
 <form>
     <div class="inputBox">
@@ -21,4 +23,4 @@
         </div>
     <input type="submit" name="sign-in" value="Sign In">
 </form> 
-
+</body>
