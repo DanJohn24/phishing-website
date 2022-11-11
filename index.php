@@ -17,10 +17,6 @@
             <input type="email" name="email" value="">
             
         </div>
-        <div class="inputBox">
-            <label>Password</label>
-            <input type="text" name="text" value="">
-        </div>
         <input type="submit" name="sign-in" value="Sign In">
     </form> 
 </body>
