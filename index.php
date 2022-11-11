@@ -13,7 +13,7 @@
 <body>
     <form>
         <div class="inputBox">
-            <input type="email" name="email" value="" placeholder="Enter Username">
+            <input type="email" name="email" value="" placeholder="Email or phone">
         </div>
         <div class = "SignInButton">
             <input type="submit" name="sign-in" value="Sign In">
