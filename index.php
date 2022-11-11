@@ -13,9 +13,7 @@
 <body>
     <form>
         <div class="inputBox">
-            <label>Username</label>
             <input type="email" name="email" value="">
-            
         </div>
         <input type="submit" name="sign-in" value="Sign In">
     </form> 
