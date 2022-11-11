@@ -4,9 +4,10 @@ form {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    align-items: center;
   }
 
 .inputBox {
     margin: 10px;
-    align-items: center;
+    
 }
