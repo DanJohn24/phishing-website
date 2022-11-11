@@ -1,3 +1,6 @@
-form{
-    position: relative;
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
 }
