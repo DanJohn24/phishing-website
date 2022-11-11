@@ -5,3 +5,7 @@ form {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+
+inputBox{
+    margin-top: 10px;
+}
