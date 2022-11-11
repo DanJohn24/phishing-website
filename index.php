@@ -15,6 +15,8 @@
         <div class="inputBox">
             <input type="email" name="email" value="" placeholder="Enter Username">
         </div>
-        <input type="submit" name="sign-in" value="Sign In">
+        <div class = "SignInButton">
+            <input type="submit" name="sign-in" value="Sign In">
+        </div>
     </form> 
 </body>
