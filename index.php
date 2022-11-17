@@ -2,15 +2,15 @@
     $title = 'Index'; 
 
     //require_once 'includes/header.php'; 
-    require_once 'db/conn.php'; 
+    //require_once 'db/conn.php'; 
 
 
 ?>
 
 
-<!-- <head>
+<head>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-</head> -->
+</head>
  
 <body>
     <form>
