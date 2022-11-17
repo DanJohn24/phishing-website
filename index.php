@@ -7,11 +7,7 @@
 
 ?>
 
-
-
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-
- 
 
 <form>
     <div class="inputBox">
