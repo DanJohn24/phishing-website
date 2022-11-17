@@ -11,7 +11,7 @@
         echo "no connection";
         die("Connection failed: " . $conn->connect_error);
     }
-    $data = $conn->query('SHOW databases');
+    echo $data = $conn->query('SHOW databases');
     echo "Connected successfully";
 
 ?>
