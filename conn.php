@@ -1,10 +1,15 @@
 <?php
-    //remote db connection
-    $host = 'ltnya0pnki2ck9w8.chr7pe7iynqr.eu-west-1.rds.amazonaws.com'
-    $db = 'ofjkxkxm5e5a4un3'
-    $user = 'ntjiuzf0x77foh47'
-    $pass = 'oa3tltoa3buucpt7'
-    $charset = 'utf8mb4'
+    $servername = "localhost";
+    $username = "username";
+    $password = "password";
+    
+    // Create connection
+    $conn = new mysqli($servername, $username, $password);
+    
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+    echo "Connected successfully";
 
-    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 ?>
