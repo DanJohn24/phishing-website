@@ -17,7 +17,7 @@
 
     //test
     $test_query = $conn->query("SHOW databases;");
-    $result = mysqli_query($link, $test_query);
+    $result = mysqli_query($conn, $test_query);
 
     $tblCnt = 0;
     while($tbl = mysqli_fetch_array($result)) {
