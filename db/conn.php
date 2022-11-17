@@ -12,19 +12,8 @@
         die("Connection failed: " . $conn->connect_error);
     }
     echo "Connected successfully";
-    
+
     $data = $conn->query('SHOW databases');
     echo $data
     
-
-
-    //test
-    $test_query = $conn->query("SHOW databases;");
-
-    $tblCnt = 0;
-    while($tbl = mysqli_fetch_array($result)) {
-         $tblCnt++;
-         echo $tbl[0]."<br />\n";
-    }
-
 ?>
