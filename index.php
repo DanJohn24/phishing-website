@@ -1,18 +1,16 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-</head>
-
 <?php
     $title = 'Index'; 
 
     //require_once 'includes/header.php'; 
-    require_once 'db/conn.php'; 
+    //require_once 'db/conn.php'; 
 
 
 ?>
 
 
-
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
  
 <body>
     <form>
