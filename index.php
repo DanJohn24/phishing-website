@@ -2,7 +2,7 @@
     $title = 'Index'; 
 
     //require_once 'includes/header.php'; 
-    //require_once 'db/conn.php'; 
+    require_once 'db/conn.php'; 
 
 
 ?>
@@ -23,3 +23,4 @@
         </div>
     </form> 
 </body>
+<?php require_once 'includes/footer.php'; ?>
