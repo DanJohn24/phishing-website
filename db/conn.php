@@ -11,6 +11,7 @@
         echo "no connection";
         die("Connection failed: " . $conn->connect_error);
     }
+    con.query('SHOW databases;');
     echo "Connected successfully";
 
 ?>
