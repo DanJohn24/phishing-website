@@ -5,12 +5,12 @@
     $db = 'heroku_5af6573f25bac00';
     
     // Create connection
-    $conn = new mysqli($servername, $username, $password,$db );
+    $conn = new mysqli($servername, $username, $password, $db);
     
     // Check connection
     if ($conn->connect_error) {
         echo "no connection";
-        die("Connection failed: " . $conn->connect_error);
+        //die("Connection failed: " . $conn->connect_error);
     }
     echo "Connected successfully";
 ?>
