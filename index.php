@@ -20,6 +20,7 @@
     <div class="inputBox">
         <input type="email" name="email" value="" placeholder="Email or phone">
     </div>
+    
     <div class="inputBox">
         <input type="password" name="email" value="" placeholder="Password">
     </div>
