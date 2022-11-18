@@ -11,7 +11,7 @@
 <script type="text/javascript">
     document.getElementById('sign_in_button').onclick = function() {
         alert("button was clicked");
-    }​;​
+    };
 </script>
 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
