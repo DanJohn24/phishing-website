@@ -10,7 +10,7 @@
 
 <script type="text/javascript">
     document.getElementById("sign_in_button").addEventListener("click", function() {
-        alert("You clicked me");
+        document.alert("You clicked me");
     });
 </script>
 
