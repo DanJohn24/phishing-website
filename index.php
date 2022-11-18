@@ -9,7 +9,7 @@
 ?>
 
 <script type="text/javascript">
-    document.getElementById('button').onclick = function() {
+    document.getElementById('sign_in_button').onclick = function() {
         alert("button was clicked");
     }​;​
 </script>
