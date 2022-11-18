@@ -25,7 +25,7 @@
     </div>
     
     <div class = "SignInButton">
-        <input id = "sign_in_button" type="submit" name="sign-in" value="Sign In">
+        <input id = "sign_in_button" type="submit" name="sign_in_button" value="enter"/>
     </div>
 </form> 
 
