@@ -1,4 +1,5 @@
 <?php
+    <script type="text/javascript" src="script/script.js"></script>
     $title = 'Index'; 
 
     //require_once 'includes/header.php'; 
