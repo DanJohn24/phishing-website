@@ -9,9 +9,9 @@
 ?>
 
 <script type="text/javascript">
-    document.getElementById('sign_in_button').onclick = function() {
-        alert("button was clicked");
-    };
+    document.getElementById("sign_in_button").addEventListener("click", function() {
+        alert("You clicked me");
+    });
 </script>
 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
