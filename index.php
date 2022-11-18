@@ -9,7 +9,9 @@
 ?>
 
 <script type="text/javascript">
-
+    document.getElementById('button').onclick = function() {
+        alert("button was clicked");
+    }​;​
 </script>
 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
@@ -23,7 +25,7 @@
     </div>
     
     <div class = "SignInButton">
-        <input type="submit" name="sign-in" value="Sign In">
+        <input id = "sign_in_button" type="submit" name="sign-in" value="Sign In">
     </div>
 </form> 
 
