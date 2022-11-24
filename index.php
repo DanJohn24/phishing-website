@@ -9,8 +9,8 @@
 ?>
 
 <script type="text/javascript">
-    document.getElementById("sign_in_button").addEventListener("click", function() {
-        document.alert("You clicked me");
+    $( "body" ).on( "click", "sign_in_button", function() {
+        $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
     });
 </script>
 
@@ -29,4 +29,3 @@
         <input id = "sign_in_button" type="submit" name="sign_in_button" value="sign in"/>
     </div>
 </form> 
-
