@@ -8,10 +8,10 @@
 
 ?>
 
-<script type="text/javascript">
-    $( "body" ).on( "click", "sign_in_button", function() {
-        $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
-    });
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<script>
+
 </script>
 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
