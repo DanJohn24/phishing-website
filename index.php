@@ -1,11 +1,8 @@
 <?php
-    
     $title = 'Index'; 
 
     //require_once 'includes/header.php'; 
     require_once 'db/conn.php'; 
-
-
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
