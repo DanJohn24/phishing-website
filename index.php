@@ -8,11 +8,12 @@
 
 ?>
 
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script>
-
-</script>
+    $( "#sign_in_button" ).click(function() {
+        alert( "Handler for .click() called.");
+    });
+</script> 
 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 
