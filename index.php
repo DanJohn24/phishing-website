@@ -1,3 +1,7 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
 <?php
     $title = 'Index'; 
 
@@ -5,9 +9,7 @@
     require_once 'db/conn.php'; 
 ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-<script type="text/javascript">>
+<script type="text/javascript">
     $( "#sign_in_button" ).click(function() {
         window.alert( "Handler for .click() called.");
     });
