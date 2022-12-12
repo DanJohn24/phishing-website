@@ -1,8 +1,5 @@
-$( "#sign_in_button" ).click(function() {
-    window.alert( "Handler for .click() called.");
-});
-
-$(document).ready(function()
-{
-    alert("test");
+$(document).ready(function() {
+    $('#sign_in_button_div').on('click', function() {
+        alert( "Handler for .click() called.");
+    });
 });

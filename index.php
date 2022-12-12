@@ -20,7 +20,7 @@
         <input type="password" name="email" value="" placeholder="Password">
     </div>
 
-    <div class = "SignInButton">
+    <div id = "sign_in_button_div" >
         <input id = "sign_in_button" type="button" name="sign_in_button" value="sign in"/> 
     </div>
 </form>
