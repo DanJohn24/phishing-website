@@ -1,4 +1,5 @@
 <script src="script\jquery.js"></script>
+<script src=script\script.js></script>
 
 <?php
     $title = 'Index'; 
@@ -6,8 +7,6 @@
     //require_once 'includes/header.php'; 
     require_once 'db/conn.php'; 
 ?>
-
-<script src=script\script.js></script>
 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 
