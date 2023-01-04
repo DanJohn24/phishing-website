@@ -15,8 +15,8 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    mysql_select_db('test_db');
-    $retval = mysql_query( $sql, $conn );
+    //mysql_select_db('results_table');
+    $retval = $conn->query($sql);
     if(! $retval ) {
         die('Could not update data: ' . mysql_error());
     }

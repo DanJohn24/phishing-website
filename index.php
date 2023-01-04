@@ -22,3 +22,6 @@
         <input id = "sign_in_button" type="button" name="sign_in_button" value="sign in"/> 
     </div>
 </form>
+<form>    
+    <?php include ("db/test_conn.php"); ?> 
+</form>

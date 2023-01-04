@@ -5,7 +5,7 @@ $(document).ready(function() {
             method: "POST",
             //data: {email: $('#email').val(), id: $('#id_user').val()}
           })
-          .done(function() {
+          /* .done(function() {
             alert("success");
           })
           .fail(function() {
@@ -13,6 +13,6 @@ $(document).ready(function() {
           })
           .always(function() {
             alert("complete");
-          });
+          }); */
     });
 });
