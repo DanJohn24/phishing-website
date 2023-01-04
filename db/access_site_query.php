@@ -20,6 +20,6 @@
     if(! $retval ) {
         die('Could not update data: ');
     }
-    echo "Updated data successfully\n";
+    echo "Updated access site data successfully\n";
     //mysql_close($conn);
 ?>
