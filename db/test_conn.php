@@ -18,8 +18,8 @@
     //mysql_select_db('results_table');
     $retval = $conn->query($sql);
     if(! $retval ) {
-        die('Could not update data: ' . mysql_error());
+        die('Could not update data: ');
     }
     echo "Updated data successfully\n";
-    mysql_close($conn);
+    //mysql_close($conn);
 ?>
