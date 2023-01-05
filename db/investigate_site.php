@@ -4,7 +4,7 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
-    $sql = "UPDATE results_table SET AccessSiteCount = AccessSiteCount + 1 WHERE id = 1";
+    $sql = "UPDATE results_table SET InvestigateSiteCount = InvestigateSiteCount + 1 WHERE id = 1";
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);

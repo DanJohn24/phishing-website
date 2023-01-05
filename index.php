@@ -27,3 +27,6 @@
     </div>
 </form>
 
+<a href="db\investigate_site.php">Help</a> 
+<a href="db\investigate_site.php">Privacy</a> 
+<a href="db\investigate_site.php">Terms</a> 
