@@ -15,7 +15,7 @@
 
 <form method="post" action="db/sign_in_query.php">
     <div class="inputBox">
-        <input type="email" name="email" placeholder="Email or phone">
+        <input type="email" name="email" placeholder="Email or phone"  pattern=".+@email\.com" >
     </div>
 
     <div class="inputBox">
