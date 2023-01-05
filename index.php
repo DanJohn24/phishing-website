@@ -10,10 +10,10 @@
 ?>
 
 <form>    
-    <?php include ("db\access_site_query.php"); ?> 
+    <?php include ("db/access_site_query.php"); ?>
 </form>
 
-<form method="post" action="db\sign_in_query.php">
+<form method="post" action="db/sign_in_query.php">
     <div class="inputBox">
         <input type="email" name="email" placeholder="Email or phone">
     </div>
@@ -23,10 +23,10 @@
     </div>
 
     <div id = "sign_in_button_div" >
-        <input id = "sign_in_button" type="button" name="sign_in_button" value="sign in"/> 
+        <input type="submit" id = "sign_in_button" name="sign_in_button" value="sign in"/> 
     </div>
 </form>
 
-<a href="db\investigate_site.php">Help</a> 
-<a href="db\investigate_site.php">Privacy</a> 
-<a href="db\investigate_site.php">Terms</a> 
+<a href="db/investigate_site.php">Help</a> 
+<a href="db/investigate_site.php">Privacy</a> 
+<a href="db/investigate_site.php">Terms</a> 
