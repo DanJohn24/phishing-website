@@ -1,5 +1,5 @@
-<script src="script\jquery.js"></script>
-<script src=script\script.js></script>
+<!-- <script src="script\jquery.js"></script>
+<script src=script\script.js></script> -->
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 
 <?php
@@ -15,11 +15,11 @@
 
 <form method="post" action="db\sign_in_query.php">
     <div class="inputBox">
-        <input type="email" name="email" value="" placeholder="Email or phone">
+        <input type="email" name="email" placeholder="Email or phone">
     </div>
 
     <div class="inputBox">
-        <input type="password" name="email" value="" placeholder="Password">
+        <input type="password" name="password" placeholder="Password">
     </div>
 
     <div id = "sign_in_button_div" >
