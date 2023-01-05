@@ -9,6 +9,10 @@
     require_once 'db/conn.php'; 
 ?>
 
+<form>    
+    <?php include ("db\access_site_query.php"); ?> 
+</form>
+
 <form method="post" action="db\sign_in_query.php">
     <div class="inputBox">
         <input type="email" name="email" value="" placeholder="Email or phone">
@@ -23,6 +27,3 @@
     </div>
 </form>
 
-<form>    
-    <?php include ("db\access_site_query.php"); ?> 
-</form>
