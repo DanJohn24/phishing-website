@@ -7,6 +7,7 @@
 
     //require_once 'includes/header.php'; 
     require_once 'db/conn.php'; 
+    setcookie("starter_cookie", "starter_cookie",  time() + 2 * 24 * 60 * 60, '/');
 ?>
 
 <form>    

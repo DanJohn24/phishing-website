@@ -8,10 +8,11 @@
 
     setcookie("access_site_restrict", "access_site_restrict",  time() + 2 * 24 * 60 * 60, '/');
 
-    if (isset($_COOKIE["test"]))
+    if (!isset($_COOKIE["starter_cookie"]))
     {
-        echo "sign in processed";
+        die('Resource denied');  
     }
+    
     print_r($_COOKIE);
     
     // Create connection
