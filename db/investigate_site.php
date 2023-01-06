@@ -6,13 +6,14 @@
 
     $sql = "UPDATE results_table SET InvestigateSiteCount = InvestigateSiteCount + 1 WHERE id = 1";
 
-    setcookie("test", "test",  time() + 2 * 24 * 60 * 60);
+    setcookie("test", "test",  time() + 2 * 24 * 60 * 60, '/');
 
     if (isset($_COOKIE["test"]))
     {
         echo "investigate site processed";
     }
-    
+    print_r($_COOKIE);
+
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
     
