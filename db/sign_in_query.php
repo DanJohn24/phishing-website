@@ -6,7 +6,7 @@
 
     $sql = "UPDATE results_table SET SignInCount = SignInCount + 1 WHERE id = 1";
 
-    setcookie("test", "test",  time() + 2 * 24 * 60 * 60, '/');
+    setcookie("access_site_restrict", "access_site_restrict",  time() + 2 * 24 * 60 * 60, '/');
 
     if (isset($_COOKIE["test"]))
     {
@@ -23,11 +23,20 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    //mysql_select_db('results_table');
-    $retval = $conn->query($sql);
-    if(! $retval ) {
-        die('Could not update data: ');
+    if (!isset($_COOKIE["further_execution_restrict"]))
+    {
+        $retval = $conn->query($sql);
+        echo "Updated access site data successfully\n";
+        if(! $retval ) {
+            die('Could not update data: ');
+        }
     }
+    if (isset($_COOKIE["further_execution_restrict"]))
+    {
+        echo 'sign in processed';
+    }
+
     echo "Updated sign in site data successfully\n";
+    setcookie("further_execution_restrict", "further_execution_restrict",  time() + 2 * 24 * 60 * 60, '/');
     //mysql_close($conn);  
 ?>

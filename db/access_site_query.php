@@ -17,22 +17,18 @@
         die("Connection failed: " . $conn->connect_error);
     }
     
-    if (!isset($_COOKIE["test"]))
+    if (!isset($_COOKIE["access_site_restrict"]))
     {
         $retval = $conn->query($sql);
         echo "Updated access site data successfully\n";
+        setcookie("access_site_restrict", "access_site_restrict",  time() + 2 * 24 * 60 * 60, '/');
         if(! $retval ) {
             die('Could not update data: ');
         }
     }
-    if (isset($_COOKIE["test"]))
+    if (isset($_COOKIE["access_site_restrict"]))
     {
         echo 'sign in processed';
     }
-    
-    
-    
-    
-    
     //mysql_close($conn);
 ?>
