@@ -1,6 +1,6 @@
 <!-- <script src="script\jquery.js"></script>
-<script src=script\script.js></script> -->
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<script src=script\script.js></script> 
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" /> -->
 
 <?php
     $title = 'Index'; 

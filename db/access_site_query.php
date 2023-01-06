@@ -14,12 +14,21 @@
         echo "no connection";
         die("Connection failed: " . $conn->connect_error);
     }
-
-    //mysql_select_db('results_table');
-    $retval = $conn->query($sql);
-    if(! $retval ) {
-        die('Could not update data: ');
+    
+    if (isset($_COOKIE)) {
+        echo 'sign in processed';
     }
-    echo "Updated access site data successfully\n";
+    else if (!isset($_COOKIE["test"]))
+    {
+        $retval = $conn->query($sql);
+        echo "Updated access site data successfully\n";
+        if(! $retval ) {
+            die('Could not update data: ');
+        }
+    }
+    
+    
+    
+    
     //mysql_close($conn);
 ?>
