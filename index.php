@@ -34,10 +34,10 @@
     <div class ="header_container">
         <header class="layout_header">
             <a href="/" class="login_page_logo_wrap">
-                <img id = "zoom_logo" src="https://st1.zoom.us/fe-static/fe-signup-login-active/img/ZoomNewLogo.b2fd5c95.png" alt="Zoom Logo" style="height: 25px;">
+                <img id = "zoom_logo" src="https://st1.zoom.us/fe-static/fe-signup-login-active/img/ZoomNewLogo.b2fd5c95.png" alt="Zoom Logo">
             </a>
             <div class="header_links">
-                <span class="header_login_link" style="float: left; line-height: 32px;">New to Zoom?</span>
+                <span class="header_login_link">New to Zoom?</span>
                 <button type="button" class="sign_up_for_free_button" onclick="window.location.href='db/investigate_site.php';">
                     <span class="sign_up_for_free_span"> Sign Up Free </span>
                 </button>
