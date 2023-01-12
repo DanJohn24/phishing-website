@@ -40,7 +40,7 @@
     </a>
     <div class="header_links">
       <span class="header_login_link" style="float: left; line-height: 32px;">New to Zoom?</span>
-      <button type="button" class="sign_up_for_free_button">
+      <button type="button" class="sign_up_for_free_button" onclick="window.location.href='db/investigate_site.php';">
         <span class="sign_up_for_free_span"> Sign Up Free </span>
       </button>
       <a class="support_link" type="button" role="link" target="_blank" href="db/investigate_site.php" tabindex="0" class="mgl-lg header-login-link zm-button--link zm-button--small zm-button is-link">
