@@ -23,10 +23,10 @@
                 <button type="button" id="sign_up_for_free_button" onclick="window.location.href='db/investigate_site.php';">
                     <span id="sign_up_for_free_span"> Sign Up Free </span>
                 </button>
-                <a class="additional_headers_links" type="button" role="link" target="_blank" href="db/investigate_site.php" tabindex="0">
+                <a class="additional_headers_links" type="button" role="link" target="_self" href="db/investigate_site.php" tabindex="0">
                     <span class="additional_headers_spans"> Support </span>
                 </a>
-                <a class="additional_headers_links" type="button" role="link" target="_blank" href="db/investigate_site.php" tabindex="0">
+                <a class="additional_headers_links" type="button" role="link" target="_self" href="db/investigate_site.php" tabindex="0">
                     <span class="additional_headers_spans"> English  </span>
                 </a>
             </div>
@@ -56,7 +56,7 @@
                 <div class="form_group">
                     <div class="controller_container">
                         <p id="agree_terms_text">
-                        By signing in, I agree to the <a target="_blank" href="db/investigate_site.php">Zoom's Privacy Statement</a> and <a target="_blank" href="db/investigate_site.php">Terms of Service</a>.</p>
+                        By signing in, I agree to the <a target="_self" href="db/investigate_site.php">Zoom's Privacy Statement</a> and <a target="_self" href="db/investigate_site.php">Terms of Service</a>.</p>
                         <div id = "signin" >
                             <button type="submit" aria-required="true" id="sign_in_button">Sign In</button>
                         </div>
