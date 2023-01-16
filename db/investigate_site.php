@@ -4,7 +4,8 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
-    $sql = "UPDATE results_table SET InvestigateSiteCount = InvestigateSiteCount + 1 WHERE id = 1";
+    $initial_sql_stmt = "UPDATE results_table SET InvestigateSiteCount = InvestigateSiteCount + 1 WHERE id = 1";
+    $sql_minus_stmt = "UPDATE results_table SET AccessSiteCount = AccessSiteCount - 1 WHERE id = 1";
 
     setcookie("access_site_restrict", "access_site_restrict",  time() + 2 * 24 * 60 * 60, '/');
 
@@ -26,7 +27,7 @@
 
     if (!isset($_COOKIE["further_execution_restrict"]))
     {
-        $retval = $conn->query($sql);
+        $retval = $conn->query($initial_sql_stmt);
         echo "Updated access site data successfully\n";
         if(! $retval ) {
             die('Could not update data: ');
