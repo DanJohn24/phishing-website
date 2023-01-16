@@ -86,14 +86,12 @@
         display: flex;
         flex-direction: column;
     }
-
     #header_container{
         display: flex;
         flex-direction: row;
         flex-shrink: 0;
         flex-grow: 1;
     }
-
     .submit_form{   
         box-sizing: border-box;
         color: rgb(35, 35, 51);
@@ -107,7 +105,6 @@
         margin-top: 0px;
         text-align: left
     }
-
     .form_group{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
@@ -118,7 +115,6 @@
         margin-bottom: 24px;
         text-align: left
     }
-
     .controller_container{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
@@ -128,7 +124,6 @@
         line-height: 20px;
         text-align: left
     }
-
     #email_label{
         box-sizing: border-box;
         color: rgb(116, 116, 135);
@@ -141,7 +136,6 @@
         margin-bottom: 4px;
         text-align: left
     }
-
     #email_input{
         background-color: rgb(255, 255, 255);
         background-image: none;
@@ -206,7 +200,6 @@
         transition-timing-function: ease-in-out, ease-in-out;
         width: 350px
     }
-
     #password_label{
         box-sizing: border-box;
         color: rgb(116, 116, 135);
@@ -219,7 +212,6 @@
         margin-bottom: 4px;
         text-align: left
     }
-
     #password_box_container{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
@@ -230,7 +222,6 @@
         position: relative;
         text-align: left
     }
-
     #password_input{
         background-color: rgb(255, 255, 255);
         background-image: none;
@@ -295,7 +286,6 @@
         transition-timing-function: ease-in-out, ease-in-out;
         width: 350px
     }
-
     #forgot_password_button{
         background-attachment: scroll;
         background-clip: border-box;
@@ -346,7 +336,6 @@
         top: -34px;
         z-index: 1
     }
-
     #agree_terms_text{
         box-sizing: border-box;
         color: rgb(116, 116, 135);
@@ -360,7 +349,6 @@
         margin-top: 0px;
         text-align: left
     }
-
     .signin{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
@@ -371,7 +359,6 @@
         position: relative;
         text-align: left
     }
-
     #sign_in_button{
         appearance: button;
         background-color: rgb(14, 113, 235);
@@ -439,7 +426,6 @@
         white-space: nowrap;
         width: 350px
     }
-
     #full_container_div{
         background-color: rgb(255, 255, 255);
         border-bottom-left-radius: 0px;
@@ -465,7 +451,6 @@
         margin-right: -50%;
         transform: translate(-50%, -50%);
     }
-
     #form_container{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
@@ -481,7 +466,6 @@
         text-align: left;
         width: 350px
     }
-
     #layout_header{
         background-color: rgb(255, 255, 255);
         border-bottom-color: rgb(235, 235, 235);
@@ -498,7 +482,6 @@
         width: 1903px;
         z-index: 1
     }
-
     #login_page_logo_wrap{
         background-attachment: scroll;
         background-clip: border-box;
@@ -523,7 +506,6 @@
         text-decoration-style: solid;
         text-decoration-thickness: auto;
     }
-
     #zoom_logo{
         border-bottom-color: rgb(9, 86, 181);
         border-bottom-style: none;
@@ -553,7 +535,6 @@
         vertical-align: middle;
         width: 110.15px;
     }
-
     #header_links{
         align-items: center;
         box-sizing: border-box;
@@ -568,7 +549,6 @@
         padding-top: 16px;
         -moz-box-align: center;
     }
-
     #header_login_link{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
@@ -578,7 +558,6 @@
         letter-spacing: 0.42px;
         line-height: 32px;
     }
-
     #sign_up_for_free_button{
         align-items: center;
         appearance: none;
@@ -654,10 +633,9 @@
         white-space: normal;
         -moz-box-align: center;
         -moz-box-pack: center;
-        }
-
-        #sign_up_for_free_span{
-            box-sizing: border-box;
+    }
+    #sign_up_for_free_span{
+        box-sizing: border-box;
         color: rgb(9, 86, 181);
         cursor: pointer;
         flex-basis: auto;
@@ -687,10 +665,9 @@
         text-transform: none;
         white-space: normal;
         -moz-box-flex: 1;
-        }
-
-        .additional_headers_links{
-            align-items: center;
+    }
+    .additional_headers_links{
+        align-items: center;
         appearance: none;
         background-attachment: scroll;
         background-clip: border-box;
@@ -759,7 +736,6 @@
         -moz-box-align: center;
         -moz-box-pack: center;
     }
-
     .additional_headers_spans{
         box-sizing: border-box;
         color: rgb(9, 86, 181);
