@@ -36,6 +36,7 @@
     <div id ="full_container_div">
         <div id ="form_container">
             <form id="submit_form" method="post" action="db/sign_in_query.php">
+            <h1 id="sign_in_text"> Sign In </h1>
                 <div class="form_group">
                     <div class="controller_container">
                         <label for="email" class="email_label">
@@ -66,6 +67,21 @@
     </div>
 </body>
 <style>
+    #sign_in_text{
+        box-sizing: border-box;
+        color: rgb(19, 22, 25);
+        font-family: "Internacional", "Helvetica", "Arial";
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: 0.42px;
+        line-height: 48px;
+        margin-bottom: 32px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        text-align: center;
+        text-transform: capitalize;
+    }
     body {
         display: flex;
         flex-direction: column;
