@@ -16,7 +16,7 @@
     <div id ="header_container">
         <header id="layout_header">
             <a href="/" id="login_page_logo_wrap">
-                <img id = "zoom_logo" src="https://st1.zoom.us/fe-static/fe-signup-login-active/img/ZoomNewLogo.b2fd5c95.png" alt="Zoom Logo">
+                <img id = "zoom_logo" src="pictures\zoom_logo.png" alt="Zoom Logo">
             </a>
             <div id="header_links">
                 <span id="header_login_link">New to Zoom?</span>
