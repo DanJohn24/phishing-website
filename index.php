@@ -23,10 +23,10 @@
                 <button type="button" id="sign_up_for_free_button" onclick="window.location.href='db/investigate_site.php';">
                     <span id="sign_up_for_free_span"> Sign Up Free </span>
                 </button>
-                <a class="additional_headers_links" type="button" target="_self" href="db/investigate_site.php" tabindex="0">
+                <a class="additional_headers_links" type="button" target="_self" href="db/investigate_site.php">
                     <span class="additional_headers_spans"> Support </span>
                 </a>
-                <a class="additional_headers_links" type="button"  target="_self" href="db/investigate_site.php" tabindex="0">
+                <a class="additional_headers_links" type="button"  target="_self" href="db/investigate_site.php">
                     <span class="additional_headers_spans"> English  </span>
                 </a>
             </div>
