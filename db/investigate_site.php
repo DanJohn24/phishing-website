@@ -41,3 +41,36 @@
     setcookie("further_execution_restrict", "further_execution_restrict",  time() + 2 * 24 * 60 * 60, '/');
     //mysql_close($conn);  
 ?>
+
+<html>
+    <body>
+    <div id="container">
+        <div id="header">
+            <h2>Congratulations on properly investigating this simulated Phishing test</h2>
+            <h3>Here are some tips to help you stay safer in the future</h3>
+        </div>
+        <div id="row">
+            <div class="text_section">
+                <h1>Tip: #1</h1>
+                <h2></h2>
+                <p> </p>
+            </div>
+            <div class="text_section">
+                <h1>Tip: #2</h1>
+                <h2> </h2>
+                <p> </p>
+            </div>
+            <div class="text_section">
+                <h1>Tip: #3</h1>
+                <h2> </h2>
+                <p> </p>
+            </div>
+        </div>
+    </body>
+
+    <style>
+    #container{
+        text-align:center
+    }
+    </style>
+</html>
