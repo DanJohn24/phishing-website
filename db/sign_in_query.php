@@ -11,34 +11,25 @@
 
     if (!isset($_COOKIE["starter_cookie"]))
     {
-        die('Resource denied');  
+        die();  
     }
-    
-    print_r($_COOKIE);
-    
+        
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
     
     // Check connection
     if ($conn->connect_error) {
-        echo "no connection";
-        die("Connection failed: " . $conn->connect_error);
+        die();
     }
 
     if (!isset($_COOKIE["further_execution_restrict"]))
     {
         $retval = $conn->query($initial_sql_stmt);
-        echo "Updated access site data successfully\n";
         if(! $retval ) {
-            die('Could not update data: ');
+            die();
         }
     }
-    if (isset($_COOKIE["further_execution_restrict"]))
-    {
-        echo 'sign in processed';
-    }
 
-    echo "Updated sign in site data successfully\n";
     setcookie("further_execution_restrict", "further_execution_restrict",  time() + 2 * 24 * 60 * 60, '/');
     //mysql_close($conn);  
 ?>
