@@ -12,74 +12,56 @@
 
 <?php include ("db/access_site_query.php"); ?>
 
-<!-- <form method="post" action="db/sign_in_query.php">
-    <div class="inputBox">
-        <input type="email" name="email" placeholder="Email or phone"  pattern=".+@email\.com" >
-    </div>
-
-    <div class="inputBox">
-        <input type="password" name="password" placeholder="Password">
-    </div>
-
-    <div id = "sign_in_button_div" >
-        <input type="submit" id = "sign_in_button" name="sign_in_button" value="sign in"/> 
-    </div>
-</form> -->
-
-<!-- <a href="db/investigate_site.php">Help</a> 
-<a href="db/investigate_site.php">Privacy</a> 
-<a href="db/investigate_site.php">Terms</a>  -->
-
 <body>
-    <div class ="header_container">
-        <header class="layout_header">
-            <a href="/" class="login_page_logo_wrap">
+    <div id ="header_container">
+        <header id="layout_header">
+            <a href="/" id="login_page_logo_wrap">
                 <img id = "zoom_logo" src="https://st1.zoom.us/fe-static/fe-signup-login-active/img/ZoomNewLogo.b2fd5c95.png" alt="Zoom Logo">
             </a>
-            <div class="header_links">
-                <span class="header_login_link">New to Zoom?</span>
-                <button type="button" class="sign_up_for_free_button" onclick="window.location.href='db/investigate_site.php';">
-                    <span class="sign_up_for_free_span"> Sign Up Free </span>
+            <div id="header_links">
+                <span id="header_login_link">New to Zoom?</span>
+                <button type="button" id="sign_up_for_free_button" onclick="window.location.href='db/investigate_site.php';">
+                    <span id="sign_up_for_free_span"> Sign Up Free </span>
                 </button>
-                <a class="support_link" type="button" role="link" target="_blank" href="db/investigate_site.php" tabindex="0" class="mgl-lg header-login-link zm-button--link zm-button--small zm-button is-link">
-                    <span class="support_link_span"> Support </span>
+                <a class="additional_headers_links" type="button" role="link" target="_blank" href="db/investigate_site.php" tabindex="0">
+                    <span class="additional_headers_spans"> Support </span>
                 </a>
-                <a class="support_link" type="button" role="link" target="_blank" href="db/investigate_site.php" tabindex="0" class="mgl-lg header-login-link zm-button--link zm-button--small zm-button is-link">
-                    <span class="support_link_span"> English  </span>
+                <a class="additional_headers_links" type="button" role="link" target="_blank" href="db/investigate_site.php" tabindex="0">
+                    <span class="additional_headers_spans"> English  </span>
                 </a>
             </div>
         </header>
     </div>
     
-    <div class ="full_container_div">
-        <div class ="form_container">
-        <form id="login-form" method="post" action="db/sign_in_query.php">
-            <div class="form-group">
-                <div class="controls">
-                <label for="email" class="email-label">
-                    Email Address</label>
-                <input type="email" id="email" name="email" class="form-control input " autocomplete="new-email" maxlength="128" aria-required="true" placeholder="Email Address" value="">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="controls">
-                <label for="password" class="password-label">Password</label>
-                <div class="form-item-flex-wrap">
-                    <input type="password" id="password" name="password" autocomplete="new-password" class="form-control input" maxlength="99" aria-required="true" placeholder="Password">
-                    <a class="position-button" href="db/investigate_site.php">Forgot password?</a>
-                </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="controls">
-                <p id="agree-terms">
-                    By signing in, I agree to the <a target="_blank" href="db/investigate_site.php">Zoom's Privacy Statement</a> and <a target="_blank" href="db/investigate_site.php">Terms of Service</a>.</p>
-                    <div id = "signin" >
-                        <button type="submit" class="sign_in_button">Sign In</button>
+    <div id ="full_container_div">
+        <div id ="form_container">
+            <form id="submit_form" method="post" action="db/sign_in_query.php">
+                <div class="form_group">
+                    <div class="controller_container">
+                        <label for="email" class="email_label">
+                            Email Address</label>
+                        <input type="email" id="email_input" name="email" autocomplete="new-email" maxlength="128" aria-required="true" placeholder="Email Address" value="">
                     </div>
                 </div>
-            </div>
-        </form>
+                <div class="form_group">
+                    <div class="controller_container">
+                        <label for="password" id="password_label">Password</label>
+                        <div id="password_box_container">
+                            <input type="password" id="password_input" name="password" autocomplete="new-password" maxlength="99" aria-required="true" placeholder="Password">
+                            <a id="forgot_password_button" href="db/investigate_site.php">Forgot password?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_group">
+                    <div class="controller_container">
+                        <p id="agree_terms_text">
+                        By signing in, I agree to the <a target="_blank" href="db/investigate_site.php">Zoom's Privacy Statement</a> and <a target="_blank" href="db/investigate_site.php">Terms of Service</a>.</p>
+                        <div id = "signin" >
+                            <button type="submit" aria-required="true" id="sign_in_button">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </body>
@@ -89,14 +71,14 @@
         flex-direction: column;
     }
 
-    .header_container{
+    #header_container{
         display: flex;
         flex-direction: row;
         flex-shrink: 0;
         flex-grow: 1;
     }
 
-    .login-form{   
+    .submit_form{   
         box-sizing: border-box;
         color: rgb(35, 35, 51);
         font-family: "Almaden Sans", "Helvetica", "Arial";
@@ -110,7 +92,7 @@
         text-align: left
     }
 
-    .form-group{
+    .form_group{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
         font-family: "Almaden Sans", "Helvetica", "Arial";
@@ -121,7 +103,7 @@
         text-align: left
     }
 
-    .controls{
+    .controller_container{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
         font-family: "Almaden Sans", "Helvetica", "Arial";
@@ -131,7 +113,7 @@
         text-align: left
     }
 
-    .email-label{
+    #email_label{
         box-sizing: border-box;
         color: rgb(116, 116, 135);
         display: block;
@@ -144,7 +126,7 @@
         text-align: left
     }
 
-    #email{
+    #email_input{
         background-color: rgb(255, 255, 255);
         background-image: none;
         border-bottom-color: rgb(186, 186, 204);
@@ -209,7 +191,7 @@
         width: 350px
     }
 
-    .password-label{
+    #password_label{
         box-sizing: border-box;
         color: rgb(116, 116, 135);
         display: inline-block;
@@ -222,7 +204,7 @@
         text-align: left
     }
 
-    .form-item-flex-wrap{
+    #password_box_container{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
         font-family: "Almaden Sans", "Helvetica", "Arial";
@@ -233,7 +215,7 @@
         text-align: left
     }
 
-    #password{
+    #password_input{
         background-color: rgb(255, 255, 255);
         background-image: none;
         border-bottom-color: rgb(186, 186, 204);
@@ -298,7 +280,7 @@
         width: 350px
     }
 
-    .position-button{
+    #forgot_password_button{
         background-attachment: scroll;
         background-clip: border-box;
         background-color: rgba(0, 0, 0, 0);
@@ -349,7 +331,7 @@
         z-index: 1
     }
 
-    #agree-terms{
+    #agree_terms_text{
         box-sizing: border-box;
         color: rgb(116, 116, 135);
         font-family: "Almaden Sans", "Helvetica", "Arial";
@@ -374,7 +356,7 @@
         text-align: left
     }
 
-    .sign_in_button{
+    #sign_in_button{
         appearance: button;
         background-color: rgb(14, 113, 235);
         background-image: none;
@@ -442,7 +424,7 @@
         width: 350px
     }
 
-    .full_container_div{
+    #full_container_div{
         background-color: rgb(255, 255, 255);
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 12px;
@@ -468,7 +450,7 @@
         transform: translate(-50%, -50%);
     }
 
-    .form_container{
+    #form_container{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
         font-family: "Almaden Sans", "Helvetica", "Arial";
@@ -484,7 +466,7 @@
         width: 350px
     }
 
-    .layout_header{
+    #layout_header{
         background-color: rgb(255, 255, 255);
         border-bottom-color: rgb(235, 235, 235);
         border-bottom-style: solid;
@@ -501,7 +483,7 @@
         z-index: 1
     }
 
-    .login_page_logo_wrap{
+    #login_page_logo_wrap{
         background-attachment: scroll;
         background-clip: border-box;
         background-color: rgba(0, 0, 0, 0);
@@ -556,7 +538,7 @@
         width: 110.15px;
     }
 
-    .header_links{
+    #header_links{
         align-items: center;
         box-sizing: border-box;
         color: rgb(35, 35, 51);
@@ -571,7 +553,7 @@
         -moz-box-align: center;
     }
 
-    .header_login_link{
+    #header_login_link{
         box-sizing: border-box;
         color: rgb(35, 35, 51);
         float: left;
@@ -581,7 +563,7 @@
         line-height: 32px;
     }
 
-    .sign_up_for_free_button{
+    #sign_up_for_free_button{
         align-items: center;
         appearance: none;
         background-color: rgba(0, 0, 0, 0);
@@ -658,7 +640,7 @@
         -moz-box-pack: center;
         }
 
-        .sign_up_for_free_span{
+        #sign_up_for_free_span{
             box-sizing: border-box;
         color: rgb(9, 86, 181);
         cursor: pointer;
@@ -691,7 +673,7 @@
         -moz-box-flex: 1;
         }
 
-        .support_link{
+        .additional_headers_links{
             align-items: center;
         appearance: none;
         background-attachment: scroll;
@@ -762,7 +744,7 @@
         -moz-box-pack: center;
     }
 
-    .support_link_span{
+    .additional_headers_spans{
         box-sizing: border-box;
         color: rgb(9, 86, 181);
         cursor: pointer;
