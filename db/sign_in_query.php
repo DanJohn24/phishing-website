@@ -11,6 +11,12 @@
 
     if (!isset($_COOKIE["starter_cookie"]))
     {
+        die("resource denied");  
+    }
+
+    if (isset($_COOKIE["further_execution_restrict"]))
+    {
+        header('Location:redirect_site.html');
         die();  
     }
         

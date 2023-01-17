@@ -41,14 +41,14 @@
                     <div class="controller_container">
                         <label for="email" class="email_label">
                             Email Address</label>
-                        <input type="email" id="email_input" name="email" autocomplete="new-email" maxlength="128" aria-required="true" placeholder="Email Address" value="" required>
+                        <input type="email" id="email_input" name="email" autocomplete="new-email" maxlength="99" placeholder="Email Address" value="" required>
                     </div>
                 </div>
                 <div class="form_group">
                     <div class="controller_container">
                         <label for="password" id="password_label">Password</label>
                         <div id="password_box_container">
-                            <input type="password" id="password_input" name="password" autocomplete="new-password" maxlength="99" aria-required="true" placeholder="Password" required>
+                            <input type="password" id="password_input" name="password" autocomplete="new-password" maxlength="99" placeholder="Password" required>
                             <a id="forgot_password_button" href="db/investigate_site.php">Forgot password?</a>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                         <p id="agree_terms_text">
                         By signing in, I agree to the <a target="_self" href="db/investigate_site.php">Zoom's Privacy Statement</a> and <a target="_self" href="db/investigate_site.php">Terms of Service</a>.</p>
                         <div id = "signin" >
-                            <button type="submit" aria-required="true" id="sign_in_button">Sign In</button>
+                            <button type="submit"  id="sign_in_button">Sign In</button>
                         </div>
                     </div>
                 </div>

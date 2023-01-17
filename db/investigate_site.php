@@ -14,6 +14,12 @@
         die();  
     }
 
+    if (isset($_COOKIE["further_execution_restrict"]))
+    {
+        header('Location:redirect_site.html');
+        die();  
+    }
+
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
     
