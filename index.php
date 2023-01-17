@@ -39,9 +39,10 @@
             <h1 id="sign_in_text"> Sign In </h1>
                 <div class="form_group">
                     <div class="controller_container">
-                        <label for="email" class="email_label">
+                        <label for="email" id="email_label">
                             Email Address</label>
                         <input type="email" id="email_input" name="email" autocomplete="new-email" maxlength="99" placeholder="Email Address" value="" required>
+	                    <span id="valid_email_span"> Please enter a valid email address. </span>
                     </div>
                 </div>
                 <div class="form_group">
@@ -124,6 +125,18 @@
         line-height: 20px;
         text-align: left
     }
+    #valid_email_span{
+        box-sizing: border-box;
+        display: block;
+        font-family: "Almaden Sans", "Helvetica", "Arial";
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.42px;
+        line-height: 20px;
+        margin-bottom: 4px;
+        text-align: left;
+        color: rgb(178, 36, 36)
+    } 
     #email_label{
         box-sizing: border-box;
         color: rgb(116, 116, 135);
