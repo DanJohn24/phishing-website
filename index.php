@@ -54,7 +54,7 @@
                     <div class="controller_container">
                         <label for="email" id="email_label">
                             Email Address</label>
-                        <input type="text" id="email_input" name="email" autocomplete="new-email" maxlength="99" placeholder="Email Address" value="" required>
+                        <input type="text" id="email_input" name="email" autocomplete="new-email" maxlength="99" placeholder="Email Address" value="">
 	                    <span hidden ="hidden" id="valid_email_span"> Please enter a valid email address. </span>
                     </div>
                 </div>
