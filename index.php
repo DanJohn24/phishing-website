@@ -1,5 +1,4 @@
-<!-- <script src="script\jquery.js"></script>
-<script src=script\script.js></script> 
+<!-- <script src=script\script.js></script> 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" /> -->
 
 <?php
@@ -11,6 +10,23 @@
 ?>
 
 <?php include ("db/access_site_query.php"); ?>
+
+<script type="text/javascript">
+    function email_validation() {
+        var email_in = document.getElementById('email_input').value;
+        var template = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+        if (template.test(email_in)) {
+            return true;
+        } else {
+            alert('test');
+            return false;
+        }
+    }
+
+    window.onload = function() {
+        document.getElementById('submit_form').onsubmit = email_validation;
+    }
+</script>
 
 <body>
     <div id ="header_container">
@@ -41,7 +57,7 @@
                     <div class="controller_container">
                         <label for="email" id="email_label">
                             Email Address</label>
-                        <input type="email" id="email_input" name="email" autocomplete="new-email" maxlength="99" placeholder="Email Address" value="" required>
+                        <input type="text" id="email_input" name="email" autocomplete="new-email" maxlength="99" placeholder="Email Address" value="" required>
 	                    <span id="valid_email_span"> Please enter a valid email address. </span>
                     </div>
                 </div>
