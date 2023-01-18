@@ -16,9 +16,10 @@
         var email_in = document.getElementById('email_input').value;
         var template = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
         if (template.test(email_in)) {
+            document.getElementById('valid_email_span').hidden = true
             return true;
         } else {
-            alert('test');
+            document.getElementById('valid_email_span').hidden = false
             return false;
         }
     }
@@ -58,7 +59,7 @@
                         <label for="email" id="email_label">
                             Email Address</label>
                         <input type="text" id="email_input" name="email" autocomplete="new-email" maxlength="99" placeholder="Email Address" value="" required>
-	                    <span id="valid_email_span"> Please enter a valid email address. </span>
+	                    <span hidden ="hidden" id="valid_email_span"> Please enter a valid email address. </span>
                     </div>
                 </div>
                 <div class="form_group">
@@ -143,7 +144,6 @@
     }
     #valid_email_span{
         box-sizing: border-box;
-        display: block;
         font-family: "Almaden Sans", "Helvetica", "Arial";
         font-size: 14px;
         font-weight: 400;
@@ -151,7 +151,7 @@
         line-height: 20px;
         margin-bottom: 4px;
         text-align: left;
-        color: rgb(178, 36, 36)
+        color: rgb(178, 36, 36);
     } 
     #email_label{
         box-sizing: border-box;
