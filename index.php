@@ -2,7 +2,6 @@
 
 <?php
     $title = 'Index'; 
-    
     setcookie("starter_cookie", "starter_cookie",  time() + 2 * 24 * 60 * 60, '/');
 ?>
 

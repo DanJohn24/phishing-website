@@ -30,14 +30,17 @@
 
     if (!isset($_COOKIE["further_execution_restrict"]))
     {
-        $retval = $conn->query($initial_sql_stmt);
-        if(! $retval ) {
+        $retval_one = $conn->query($initial_sql_stmt);
+        if(! $retval_one ) {
+            die();
+        }
+        $retval_two = $conn->query($sql_minus_stmt);
+        if(! $retval_two ) {
             die();
         }
     }
 
     setcookie("further_execution_restrict", "further_execution_restrict",  time() + 2 * 24 * 60 * 60, '/');
-    //mysql_close($conn);  
 ?>
 <html>
     <body>
