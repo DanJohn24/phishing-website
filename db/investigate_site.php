@@ -16,7 +16,7 @@
 
     if (isset($_COOKIE["further_execution_restrict"]))
     {
-        header('Location:redirect_site.html');
+        header('Location:redirect_site.php');
         die();  
     }
 
