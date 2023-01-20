@@ -1,3 +1,10 @@
+<?php
+    if (!isset($_COOKIE["starter_cookie"]))
+    {
+        die("resource denied");  
+    }
+?>
+
 <html>
     <body>
     <div id="container">
