@@ -4,6 +4,8 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
+    $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
     $email = $_POST['email'];
     $password_input = $_POST['password'];
     
