@@ -4,8 +4,7 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
-    //need to use ID parsed in from access_site cookie to update relevant row 
-    $initial_sql_stmt = "UPDATE results_table SET InvestigateSiteCount = 1,  AccessSiteCount = 0 WHERE id = 1";
+    $initial_sql_stmt = "UPDATE results_table SET InvestigateSiteCount = 1,  AccessSiteCount = 0 WHERE id = '$_COOKIE[access_site_restrict]'";
 
     if (!isset($_COOKIE["starter_cookie"]))
     {

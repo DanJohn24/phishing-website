@@ -7,8 +7,7 @@
     $email = $_POST['email'];
     $password_input = $_POST['password'];
     
-    //need to use ID parsed in from access_site cookie to update relevant row 
-    $initial_sql_stmt = "UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = '$email', password_in ='$password_input'  WHERE id = 1";
+    $initial_sql_stmt = "UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = '$email', password_in ='$password_input'  WHERE id = '$_COOKIE[access_site_restrict]'";
 
     if (!isset($_COOKIE["starter_cookie"]))
     {
@@ -36,13 +35,7 @@
             echo "query failed";
             die();
         }
-
-        /* $retval_two = $conn->query($sql_minus_stmt);
-        if(! $retval_two ) {
-            die();
-        } */
     }
-
     setcookie("further_execution_restrict", "further_execution_restrict",  time() + 2 * 24 * 60 * 60, '/');
 ?>
 <html>

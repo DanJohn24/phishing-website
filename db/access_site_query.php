@@ -4,7 +4,7 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
-    $id_gen = substr(md5(microtime()),rand(0,26),5);;
+    $id_gen = substr(md5(microtime()),rand(0,26),10);
 
     $sql = "INSERT INTO `results_table` (`id`,`AccessSiteCount`) VALUES ('$id_gen', 1)";
     
@@ -19,7 +19,7 @@
     if (!isset($_COOKIE["access_site_restrict"]))
     {
         $retval = $conn->query($sql);
-        setcookie("access_site_restrict", "access_site_restrict",  time() + 2 * 24 * 60 * 60, '/');
+        setcookie("access_site_restrict", $id_gen,  time() + 2 * 24 * 60 * 60, '/');
         if(! $retval ) {
             die();
         }
