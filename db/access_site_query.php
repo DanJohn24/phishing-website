@@ -4,7 +4,9 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
-    $sql = "UPDATE results_table SET AccessSiteCount = AccessSiteCount + 1 WHERE id = 1";
+    $id_gen = substr(md5(microtime()),rand(0,26),5);;
+
+    $sql = "INSERT INTO `results_table` (`id`,`AccessSiteCount`) VALUES ('$id_gen', 1)";
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
