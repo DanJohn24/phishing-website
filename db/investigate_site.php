@@ -4,7 +4,7 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
-    $initial_sql_stmt = "UPDATE results_table SET InvestigateSiteCount = 1,  AccessSiteCount = 0 WHERE id = '$_COOKIE[access_site_restrict]'";
+    $SQL_statement = "UPDATE results_table SET InvestigateSiteCount = 1,  AccessSiteCount = 0 WHERE id = '$_COOKIE[access_site_restrict]'";
 
     if (!isset($_COOKIE["starter_cookie"]))
     {
@@ -27,8 +27,8 @@
 
     if (!isset($_COOKIE["further_execution_restrict"]))
     {
-        $retval_one = $conn->query($initial_sql_stmt);
-        if(! $retval_one ) {
+        $SQL_error_check = $conn->query($SQL_statement);
+        if(! $SQL_error_check ) {
             die();
         }
     }

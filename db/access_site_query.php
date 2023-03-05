@@ -6,7 +6,7 @@
 
     $id_gen = bin2hex(openssl_random_pseudo_bytes(16));
 
-    $sql = "INSERT INTO `results_table` (`id`,`AccessSiteCount`) VALUES ('$id_gen', 1)";
+    $SQL_statement = "INSERT INTO `results_table` (`id`,`AccessSiteCount`) VALUES ('$id_gen', 1)";
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
@@ -18,9 +18,9 @@
     
     if (!isset($_COOKIE["access_site_restrict"]))
     {
-        $retval = $conn->query($sql);
+        $SQL_error_check = $conn->query($SQL_statement);
         setcookie("access_site_restrict", $id_gen,  time() + 2 * 24 * 60 * 60, '/');
-        if(! $retval ) {
+        if(! $SQL_error_check ) {
             die();
         }
     }
