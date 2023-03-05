@@ -29,7 +29,7 @@
     {
         $SQL_error_check = $conn->query($SQL_statement);
         if(! $SQL_error_check ) {
-            die();
+            die("error has occured");
         }
     }
     

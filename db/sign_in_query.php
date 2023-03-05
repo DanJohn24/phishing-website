@@ -34,8 +34,7 @@
     {
         $SQL_error_check = $conn->query($SQL_statement);
         if(! $SQL_error_check ) {
-            echo "query failed";
-            die();
+            die("error has occured");
         }
     }
     setcookie("further_execution_restrict", "further_execution_restrict",  time() + 2 * 24 * 60 * 60, '/');
