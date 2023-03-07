@@ -9,13 +9,13 @@
         die("resource denied");  
     }
 
-    $SQL_statement = "UPDATE results_table SET InvestigateSiteCount = 1,  AccessSiteCount = 0 WHERE id = '$_COOKIE[access_site_restrict]'";
-
     if (isset($_COOKIE["further_execution_restrict"]))
     {
         header('Location:redirect_site.php');
         die();  
     }
+
+    $SQL_statement = "UPDATE results_table SET InvestigateSiteCount = 1,  AccessSiteCount = 0 WHERE id = '$_COOKIE[access_site_restrict]'";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);

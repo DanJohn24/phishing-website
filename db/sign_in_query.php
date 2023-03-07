@@ -9,19 +9,19 @@
         die("resource denied");  
     }
 
+    if (isset($_COOKIE["further_execution_restrict"]))
+    {
+        header('Location:redirect_site.php');
+        die();  
+    }
+
     $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     $email = $_POST['email'];
     $password_input = $_POST['password'];
     
     $SQL_statement = "UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = '$email', password_in ='$password_input'  WHERE id = '$_COOKIE[access_site_restrict]'";
-
-    if (isset($_COOKIE["further_execution_restrict"]))
-    {
-        header('Location:redirect_site.php');
-        die();  
-    }
-        
+  
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
     
