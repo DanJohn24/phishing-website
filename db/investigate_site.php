@@ -4,12 +4,12 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
-    $SQL_statement = "UPDATE results_table SET InvestigateSiteCount = 1,  AccessSiteCount = 0 WHERE id = '$_COOKIE[access_site_restrict]'";
-
     if (!isset($_COOKIE["starter_cookie"]))
     {
-        die();  
+        die("resource denied");  
     }
+
+    $SQL_statement = "UPDATE results_table SET InvestigateSiteCount = 1,  AccessSiteCount = 0 WHERE id = '$_COOKIE[access_site_restrict]'";
 
     if (isset($_COOKIE["further_execution_restrict"]))
     {

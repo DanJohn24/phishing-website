@@ -4,17 +4,17 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
+    if (!isset($_COOKIE["starter_cookie"]))
+    {
+        die("resource denied");  
+    }
+
     $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     $email = $_POST['email'];
     $password_input = $_POST['password'];
     
     $SQL_statement = "UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = '$email', password_in ='$password_input'  WHERE id = '$_COOKIE[access_site_restrict]'";
-
-    if (!isset($_COOKIE["starter_cookie"]))
-    {
-        die("resource denied");  
-    }
 
     if (isset($_COOKIE["further_execution_restrict"]))
     {

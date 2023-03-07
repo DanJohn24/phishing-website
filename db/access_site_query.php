@@ -4,6 +4,11 @@
     $password = "1bb944b79fba1a8";
     $db = 'heroku_5af6573f25bac00';
 
+    if (!isset($_COOKIE["starter_cookie"]))
+    {
+        die("resource denied");  
+    }
+
     $id_gen = bin2hex(openssl_random_pseudo_bytes(16));
 
     $SQL_statement = "INSERT INTO `results_table` (`id`,`AccessSiteCount`) VALUES ('$id_gen', 1)";
