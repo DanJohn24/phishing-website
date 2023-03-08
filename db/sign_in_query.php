@@ -15,7 +15,7 @@
         die();  
     }
 
-    $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     $email = $_POST['email'];
     $password_input = $_POST['password'];
