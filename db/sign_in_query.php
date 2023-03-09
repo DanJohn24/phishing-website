@@ -12,7 +12,7 @@
     if (isset($_COOKIE["further_execution_restrict"]))
     {
         header('Location:redirect_site.php');
-        die();  
+        die("error has occured");  
     }
 
     $email = $_POST['email'];
@@ -23,12 +23,17 @@
     
     // Check connection
     if ($conn->connect_error) {
-        die();
+        die("error has occured");
     }
 
-    $SQL_statement = $conn->prepare("UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = ?, password_in =?  WHERE id = ?");
-    
-    $SQL_statement->bind_param("sss", $email, $password_input, $_COOKIE["access_site_restrict"]);
+    if ($SQL_statement = $conn->prepare("UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = ?, password_in =?  WHERE id = ?"))
+    {
+        $SQL_statement->bind_param("sss", $email, $password_input, $_COOKIE["access_site_restrict"]);
+    }
+    else
+    {
+        die("error has occured");
+    }
     
     if (!isset($_COOKIE["further_execution_restrict"]))
     {
