@@ -37,11 +37,10 @@
     
     if (!isset($_COOKIE["further_execution_restrict"]))
     {
-        /* $SQL_error_check =  $SQL_statement->execute();
+        $SQL_error_check =  $SQL_statement->execute();
         if(! $SQL_error_check ) {
             die("error has occured");
-        } */
-        $SQL_statement->execute();
+        }
     }
     
     $SQL_statement->close();
