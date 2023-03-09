@@ -1,8 +1,4 @@
 <?php
-    //tempoary
-    $one = 1;
-    $zero = 0;
-
     $servername = "eu-cdbr-west-03.cleardb.net";
     $username = "b26340cf38f897";
     $password = "1bb944b79fba1a8";
@@ -30,9 +26,9 @@
         die();
     }
 
-    $SQL_statement = $conn->prepare("UPDATE results_table SET SignInCount = ?,  AccessSiteCount = ?,  email_in = ?, password_in =?  WHERE id = ?");
+    $SQL_statement = $conn->prepare("UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = ?, password_in =?  WHERE id = ?");
     
-    $SQL_statement->bind_param("iisss", $one, $zero, $email, $password_input, $_COOKIE["access_site_restrict"]);
+    $SQL_statement->bind_param("sss", $email, $password_input, $_COOKIE["access_site_restrict"]);
     
     if (!isset($_COOKIE["further_execution_restrict"]))
     {
