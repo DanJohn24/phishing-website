@@ -1,4 +1,8 @@
 <?php
+    //tempoary
+    $one = 1;
+    $zero = 0;
+
     $servername = "eu-cdbr-west-03.cleardb.net";
     $username = "b26340cf38f897";
     $password = "1bb944b79fba1a8";
@@ -15,13 +19,9 @@
         die();  
     }
 
-    $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-
     $email = $_POST['email'];
     $password_input = $_POST['password'];
     
-    $SQL_statement = "UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = '$email', password_in ='$password_input'  WHERE id = '$_COOKIE[access_site_restrict]'";
-  
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
     
@@ -30,13 +30,20 @@
         die();
     }
 
+    $SQL_statement = $conn->prepare("UPDATE results_table SET SignInCount = ?,  AccessSiteCount = ?,  email_in = ?, password_in =?  WHERE id = ?");
+    
+    $SQL_statement->bind_param("iisss", $one, $zero, $email, $password_input, $_COOKIE["access_site_restrict"]);
+    
     if (!isset($_COOKIE["further_execution_restrict"]))
     {
-        $SQL_error_check = $conn->query($SQL_statement);
+        /* $SQL_error_check =  $SQL_statement->execute();
         if(! $SQL_error_check ) {
             die("error has occured");
-        }
+        } */
+        $SQL_statement->execute();
     }
+    
+    $SQL_statement->close();
     setcookie("further_execution_restrict", "further_execution_restrict",  time() + 2 * 24 * 60 * 60, '/');
 ?>
 <html>
