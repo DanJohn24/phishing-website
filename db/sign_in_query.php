@@ -1,6 +1,7 @@
 <?php include 'connection_details.php';?>
 
 <?php
+    error_reporting(0);
     if (!isset($_COOKIE["starter_cookie"]))
     {
         die("resource denied");  

@@ -1,6 +1,7 @@
 <?php include 'connection_details.php';?>
 
 <?php
+    error_reporting(0);
     $id_gen = bin2hex(openssl_random_pseudo_bytes(16));
 
     $SQL_statement = "INSERT INTO `results_table` (`id`,`AccessSiteCount`) VALUES ('$id_gen', 1)";
