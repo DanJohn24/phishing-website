@@ -1,9 +1,6 @@
-<?php
-    $servername = "eu-cdbr-west-03.cleardb.net";
-    $username = "b26340cf38f897";
-    $password = "1bb944b79fba1a8";
-    $db = 'heroku_5af6573f25bac00';
+<?php include 'connection_details.php';?>
 
+<?php
     if (!isset($_COOKIE["starter_cookie"]))
     {
         die("resource denied");  
@@ -18,7 +15,7 @@
     $SQL_statement = "UPDATE results_table SET InvestigateSiteCount = 1,  AccessSiteCount = 0 WHERE id = '$_COOKIE[access_site_restrict]'";
 
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $db);
+    $conn = new mysqli(servername, username, password, db);
     
     // Check connection
     if ($conn->connect_error) {
