@@ -17,9 +17,9 @@
     if (!isset($_COOKIE["access_site_restrict"]))
     {
         $SQL_error_check = $conn->query($SQL_statement);
-        setcookie("access_site_restrict", $id_gen,  time() + 2 * 24 * 60 * 60, '/');
         if(! $SQL_error_check ) {
             die("error has occured");
         }
+        setcookie("access_site_restrict", $id_gen,  time() + 2 * 24 * 60 * 60, '/');
     }
 ?>
