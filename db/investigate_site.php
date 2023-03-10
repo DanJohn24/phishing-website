@@ -22,7 +22,7 @@
     
     // Check connection
     if ($conn->connect_error) {
-        die();
+        die("error has occured");
     }
 
     if (!isset($_COOKIE["further_execution_restrict"]))
