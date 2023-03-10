@@ -15,9 +15,6 @@
         die("error has occured");  
     }
 
-    $email = $_POST['email'];
-    $password_input = $_POST['password'];
-    
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
     
@@ -28,7 +25,7 @@
 
     if ($SQL_statement = $conn->prepare("UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = ?, password_in =?  WHERE id = ?"))
     {
-        $SQL_statement->bind_param("sss", $email, $password_input, $_COOKIE["access_site_restrict"]);
+        $SQL_statement->bind_param("sss", $_POST['email'], $_POST['password'], $_COOKIE["access_site_restrict"]);
     }
     else
     {
