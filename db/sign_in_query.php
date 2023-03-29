@@ -23,7 +23,7 @@
 
     if ($SQL_statement = $conn->prepare("UPDATE results_table SET SignInCount = 1,  AccessSiteCount = 0,  email_in = ?, password_in =?  WHERE id = ?"))
     {
-        $SQL_statement->bind_param("sss", $_POST['email'], $_POST['password'], $_COOKIE["access_site_restrict"]);
+        $SQL_statement->bind_param("sss", $_POST['email'], password_hash($_POST['password'], PASSWORD_DEFAULT), $_COOKIE["access_site_restrict"]);
     }
     else
     {
